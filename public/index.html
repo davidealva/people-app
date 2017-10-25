@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top bg-primary" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">People</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Organization</a>
+                    </li>
+                    <li>
+                        <a href="#">Apps</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Administrators</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="row top">
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+          <form class="" role="search">
+            <div class="input-group add-on">
+              <input class="form-control" placeholder="Who are you looking for?" name="srch-term" id="srch-term" type="text">
+            </div>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="panel panel-default bootcards-media">
+            <div class="panel-heading"># of Results: <b>10</b></div>
+            <div id="root"class="panel-body"></div>
+            <div class="panel-footer">
+              <ul class="nav nav-pills center-block">
+                <li><button type="button" class="btn btn-primary btn-md" disabled="disabled">Previous</button></li>
+                <li><button type="button" class="btn btn-primary btn-md" >1</button></li>
+                <li><button type="button" class="btn btn-primary btn-md" disabled="disabled">...</button></li>
+                <li><button type="button" class="btn btn-primary btn-md" disabled="disabled">Next</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; The People App 2017</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+      	$('.card').matchHeight();
+      });
+    </script>
+
+  </body>
+</html>
